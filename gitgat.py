@@ -27,7 +27,7 @@ def get(update: Update, context: CallbackContext):
     dir_name = helpers.validate_url(url)
     if dir_name is False:
         context.bot.send_message(chat_id=update.effective_chat.id,
-                                 text='Please give me a valid GitHub directory/repository URL\nfor example: `https://github.com/rezmansouri/gitgat`\nor: `https://github.com/rust-lang/rust/tree/master/src/test`')
+                                 text='Please give me a valid GitHub directory/repository URL\nfor example: https://github.com/rezmansouri/gitgat\nor: https://github.com/rust-lang/rust/tree/master/src/test')
         return
     context.bot.send_message(chat_id=update.effective_chat.id, text='Hold on I\'m fetching the files...')
     helpers.crawl(url, dir_name)
