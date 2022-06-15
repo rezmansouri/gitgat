@@ -41,4 +41,4 @@ def validate_url(url: str):
     if re.search('https://github.com(/[^/].*){2,}', url) is None:
         return False
     dir_name = parse.unquote(parse.unquote(url.split('/')[-1]))
-    return dir_name
+    return dir_name + '.zip'
