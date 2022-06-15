@@ -24,7 +24,7 @@ def get(update: Update, context: CallbackContext):
                                  text='/get https://github.com/rezmansouri/gitgat')
         return
     url = context.args[0]
-    dir_name = helpers.validate_url(url)
+    url, dir_name = helpers.validate_url(url)
     if dir_name is False:
         context.bot.send_message(chat_id=update.effective_chat.id,
                                  text='Please give me a valid GitHub directory/repository URL\nfor example: https://github.com/rezmansouri/gitgat\nor: https://github.com/rust-lang/rust/tree/master/src/test')
