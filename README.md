@@ -25,7 +25,7 @@ The following Pypi packages were utilized.
 ## How it works
 The thrust of this project, is the `helpers.py` script.
 
-This files contains three functions:
+This file contains three functions:
 + `crawl(url, dir_name)`:
 
    A recursive function to crawl the repo/directory `url` and download it completely on the server under a unique `dir_name`.
@@ -34,7 +34,7 @@ This files contains three functions:
   To remove the downloaded directory and its compressed zip from the server, after it has been sent to the user.
 + `validate_url(url)`:
 
-  A URL validatior to check that only github rep/directory URLs are given as input. It extracts the parent directory name and uses it for the name of the compressed zip file.
+  A URL validatior to check that only github repo/directory URLs are given as input. It extracts the parent directory name and uses it for the name of the compressed zip file.
 ## Contributions
 _GitGat_ is currently a child and not able to fight the bullies! It is full of vulnerabilities. These are what I have identified so far that can be worked on:
 + Not sure if it is running _asyncly_. Meaning its behavior under concurrent requests is unclear and likely to crash.
