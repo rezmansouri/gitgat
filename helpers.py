@@ -14,7 +14,7 @@ def crawl(url: str, dir_name):
     """
     this is a recursive function.
     it receives a directory url and looks into the directory.
-    if a directories is found within, it is crawled again, otherwise the file will be downloaded.
+    if a directory is found within, it is crawled again, otherwise the file will be downloaded.
     """
     os.mkdir(storage_address + dir_name)
     page = req.urlopen(url)
@@ -40,5 +40,5 @@ def validate_url(url: str):
         url = 'https://' + url
     if re.search('https?://github.com(/[^/].*){2,}', url) is None:
         return False, False
-    dir_name = parse.unquote(parse.unquote(url.split('/')[-1]))
+    dir_name = parse.unquote(url.split('/')[-1])
     return url, dir_name + '.zip'
