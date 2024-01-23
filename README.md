@@ -1,6 +1,9 @@
 # GitGat 🍫
 a Telegram bot that downloads specific directories in public repositories from GitHub as zip
 
+![image](https://github.com/rezmansouri/gitgat/assets/46050829/06ca32a3-1d9b-49bb-8516-a42c380df41c)
+
+
 [@gitgatrobot on Telegram](https://t.me/gitgatrobot) - _no guarantee of availability due to free hosting!_
 ## Introduction
 Have you ever wanted to clone only a directory from a GitHub repo and not the whole repo? Well... _GitGat_ is here for it!
